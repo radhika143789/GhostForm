@@ -1,0 +1,403 @@
+● Test suite failed to run
+
+src/pages/__tests__/DataVault.test.tsx:5:8 - error TS1259: Module '"C:/Users/HP/Desktop/Project/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+
+5 import React from 'react';
+         ~~~~~
+
+  node_modules/@types/react/index.d.ts:46:1
+    46 export = React;
+       ~~~~~~~~~~~~~~~
+    This module is declared with 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+src/pages/__tests__/DataVault.test.tsx:7:23 - error TS6142: Module '../DataVault' was resolved to 'C:/Users/HP/Desktop/Project/src/pages/DataVault.tsx', but '--jsx' is not set.
+
+7 import DataVault from '../DataVault';
+                        ~~~~~~~~~~~~~~
+src/pages/__tests__/DataVault.test.tsx:8:25 - error TS6142: Module '../../contexts/UserContext' was resolved to 'C:/Users/HP/Desktop/Project/src/contexts/UserContext.tsx', but '--jsx' is not set.
+
+8 import { useUser } from '../../contexts/UserContext';
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/pages/__tests__/DataVault.test.tsx:36:12 - error TS17004: Cannot use JSX unless the '--jsx' flag is provided.      
+
+36     render(<DataVault />);
+              ~~~~~~~~~~~~~
+src/pages/__tests__/DataVault.test.tsx:37:60 - error TS2339: Property 'toBeInTheDocument' does not exist on type 'JestMatchers<HTMLElement>'.
+
+37     expect(screen.getByLabelText(/Enter Vault Password/i)).toBeInTheDocument();
+                                                              ~~~~~~~~~~~~~~~~~
+src/pages/__tests__/DataVault.test.tsx:38:67 - error TS2339: Property 'toBeInTheDocument' does not exist on type 'JestMatchers<HTMLElement>'.
+
+38     expect(screen.getByRole('button', { name: /Unlock Vault/i })).toBeInTheDocument();
+                                                                     ~~~~~~~~~~~~~~~~~
+src/pages/__tests__/DataVault.test.tsx:42:12 - error TS17004: Cannot use JSX unless the '--jsx' flag is provided.      
+
+42     render(<DataVault />);
+              ~~~~~~~~~~~~~
+src/pages/__tests__/DataVault.test.tsx:63:12 - error TS17004: Cannot use JSX unless the '--jsx' flag is provided.      
+
+63     render(<DataVault />);
+              ~~~~~~~~~~~~~
+src/pages/__tests__/DataVault.test.tsx:68:47 - error TS2339: Property 'toBeInTheDocument' does not exist on type 'JestMatchers<HTMLElement>'.
+
+68       expect(screen.getByText(/Data Vault/i)).toBeInTheDocument();
+                                                 ~~~~~~~~~~~~~~~~~
+src/pages/__tests__/DataVault.test.tsx:69:57 - error TS2339: Property 'toBeInTheDocument' does not exist on type 'JestMatchers<HTMLElement>'.
+
+69       expect(screen.getByText(/Personal Information/i)).toBeInTheDocument();
+                                                           ~~~~~~~~~~~~~~~~~
+atchers<HTMLElement>'.
+
+70       expect(screen.getByText(/Email/i)).toBeInTheDocument();
+                                            ~~~~~~~~~~~~~~~~~
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        39.072 s
+Ran all test suites.
+PS C:\Users\HP\Desktop\Project> npx jest
+ts-jest[config] (WARN) message TS151001: If you have issues related to imports, you should consider setting `esModuleInterop` to `true` in your TypeScript configuration file (usually `tsconfig.json`). See https://blogs.msdn.microsoft.com/typescript/2018/01/31/announcing-typescript-2-7/#easier-ecmascript-module-interoperability for more information.
+FAIL  src/pages/__tests__/DataVault.test.tsx
+● Test suite failed to run
+
+src/pages/__tests__/DataVault.test.tsx:5:8 - error TS1259: Module '"C:/Users/HP/Desktop/Project/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+
+5 import React from 'react';
+         ~~~~~
+
+  node_modules/@types/react/index.d.ts:46:1
+    46 export = React;
+       ~~~~~~~~~~~~~~~
+    This module is declared with 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+src/pages/__tests__/DataVault.test.tsx:7:23 - error TS6142: Module '../DataVault' was resolved to 'C:/Users/HP/Desktop/Project/src/pages/DataVault.tsx', but '--jsx' is not set.
+
+7 import DataVault from '../DataVault';
+                        ~~~~~~~~~~~~~~
+src/pages/__tests__/DataVault.test.tsx:8:25 - error TS6142: Module '../../contexts/UserContext' was resolved to 'C:/Users/HP/Desktop/Project/src/contexts/UserContext.tsx', but '--jsx' is not set.
+
+8 import { useUser } from '../../contexts/UserContext';
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/pages/__tests__/DataVault.test.tsx:36:12 - error TS17004: Cannot use JSX unless the '--jsx' flag is provided.      
+
+36     render(<DataVault />);
+              ~~~~~~~~~~~~~
+src/pages/__tests__/DataVault.test.tsx:37:60 - error TS2339: Property 'toBeInTheDocument' does not exist on type 'JestMatchers<HTMLElement>'.
+
+37     expect(screen.getByLabelText(/Enter Vault Password/i)).toBeInTheDocument();
+                                                              ~~~~~~~~~~~~~~~~~
+src/pages/__tests__/DataVault.test.tsx:38:67 - error TS2339: Property 'toBeInTheDocument' does not exist on type 'JestMatchers<HTMLElement>'.
+
+38     expect(screen.getByRole('button', { name: /Unlock Vault/i })).toBeInTheDocument();
+                                                                     ~~~~~~~~~~~~~~~~~
+src/pages/__tests__/DataVault.test.tsx:42:12 - error TS17004: Cannot use JSX unless the '--jsx' flag is provided.      
+
+42     render(<DataVault />);
+              ~~~~~~~~~~~~~
+src/pages/__tests__/DataVault.test.tsx:63:12 - error TS17004: Cannot use JSX unless the '--jsx' flag is provided.      
+
+63     render(<DataVault />);
+              ~~~~~~~~~~~~~
+src/pages/__tests__/DataVault.test.tsx:68:47 - error TS2339: Property 'toBeInTheDocument' does not exist on type 'JestMatchers<HTMLElement>'.
+
+68       expect(screen.getByText(/Data Vault/i)).toBeInTheDocument();
+                                                 ~~~~~~~~~~~~~~~~~
+src/pages/__tests__/DataVault.test.tsx:69:57 - error TS2339: Property 'toBeInTheDocument' does not exist on type 'JestMatchers<HTMLElement>'.
+
+69       expect(screen.getByText(/Personal Information/i)).toBeInTheDocument();
+                                                           ~~~~~~~~~~~~~~~~~
+atchers<HTMLElement>'.
+
+70       expect(screen.getByText(/Email/i)).toBeInTheDocument();
+                                            ~~~~~~~~~~~~~~~~~
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        76.887 s
+Ran all test suites.
+PS C:\Users\HP\Desktop\Project> npx jest
+ts-jest[ts-jest-transformer] (WARN) Define `ts-jest` config under `globals` is deprecated. Please do
+transform: {
+<transform_regex>: ['ts-jest', { /* ts-jest config goes here in Jest */ }],
+},
+See more at https://kulshekhar.github.io/ts-jest/docs/getting-started/presets#advanced
+FAIL  src/pages/__tests__/DataVault.test.tsx (75.114 s)
+DataVault Component
+√ renders password input form initially (1673 ms)
+√ shows error toast on incorrect password (1103 ms)
+× unlocks vault on correct password and fetches data (2780 ms)
+
+● DataVault Component › unlocks vault on correct password and fetches data
+
+Found multiple elements with the text: /Personal Information/i
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+<p
+  class="text-sm text-muted-foreground"
+>
+  Add personal information you want WatchTower to monitor and protect
+</p>
+
+Ignored nodes: comments, script, style
+<h2
+  class="text-xl font-semibold"
+>
+  Personal
+   Information
+</h2>
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+<body>
+  <div>
+    <div
+      class="animate-fade-in space-y-6"
+    >
+      <div>
+        <h1
+          class="text-3xl font-bold tracking-tight"
+        >
+          Data Vault
+        </h1>
+        <p
+          class="text-muted-foreground"
+        >
+          Securely manage your personal data
+        </p>
+      </div>
+      <div
+        class="rounded-lg border bg-card text-card-foreground shadow-sm"
+      >
+        <div
+          class="flex flex-col space-y-1.5 p-6"
+        >
+          <h3
+            class="text-2xl font-semibold leading-none tracking-tight flex items-center"
+          >
+            <svg
+              class="lucide lucide-shield mr-2 h-5 w-5 text-primary"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+              />
+            </svg>
+            Add New Data to Protect
+          </h3>
+          <p
+            class="text-sm text-muted-foreground"
+          >
+            Add personal information you want WatchTower to monitor and protect
+          </p>
+        </div>
+        <div
+          class="p-6 pt-0"
+        >
+          <div
+            class="grid gap-4 sm:grid-cols-3"
+          >
+            <div
+              class="space-y-2"
+            >
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"     
+                for="category"
+              >
+                Category
+              </label>
+              <input
+                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
+                id="category"
+                placeholder="e.g., Personal, Financial"
+                value=""
+              />
+            </div>
+            <div
+              class="space-y-2"
+            >
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"     
+                for="name"
+              >
+                Data Name
+              </label>
+              <input
+                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
+                id="name"
+                placeholder="e.g., Email, Phone Number"
+                value=""
+              />
+            </div>
+            <div
+              class="space-y-2"
+            >
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"     
+                for="value"
+              >
+                Value
+              </label>
+              <input
+                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
+                id="value"
+                placeholder="The actual data value"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex items-center p-6 pt-0"
+        >
+          <button
+            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
+          >
+            Add to Vault
+          </button>
+        </div>
+      </div>
+      <div
+        class="space-y-6"
+      >
+        <div
+          class="space-y-4"
+        >
+          <h2
+            class="text-xl font-semibold"
+          >
+            Personal
+             Information
+          </h2>
+          <div
+            class="grid gap-4 sm:grid-cols-2"
+          >
+            <div
+              class="rounded-lg border bg-card text-card-foreground shadow-sm border-primary/30"
+            >
+              <div
+                class="flex flex-col space-y-1.5 p-6 pb-2"
+              >
+                <div
+                  class="flex justify-between items-center"
+                >
+                  <h3
+                    class="text-2xl font-semibold leading-none tracking-tight text-base"
+                  >
+                    Email
+                  </h3>
+                  <div
+                    class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80"
+                  >
+                    Protected
+                  </div>
+                </div>
+              </div>
+              <div
+                class="p-6 pt-0"
+              >
+                <div
+                  class="flex items-center justify-between"
+                >
+                  <div
+                    class="flex items-center gap-2"
+                  >
+                    <div
+                      class="font-mono bg-muted px-2 py-1 rounded text-sm"
+                    >
+                      ••••••••••••
+                    </div>
+                    <button
+                      class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-10 w-10 h-8 w-8"
+                    >
+                      <svg
+                        class="lucide lucide-eye h-4 w-4"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"
+                        />
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="3"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <div
+                    class="flex items-center space-x-2"
+                  >
+                    <button
+                      aria-checked="true"
+                      class="peer inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=unchecked]:bg-input"
+                      data-state="checked"
+                      role="switch"
+                      type="button"
+                      value="on"
+                    >
+                      <span
+                        class="pointer-events-none block h-5 w-5 rounded-full bg-background shadow-lg ring-0 transition-transform data-[state=checked]:translate-x-5 data-[state=unchecked]:translate-x-0"
+                        data-state="checked"
+                      />
+                    </button>
+                    <label
+                      class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                      for="protected-1"
+                    >
+                      <span
+                        class="text-xs flex items-center text-green-600"
+                      >
+                        <svg
+                          class="lucide lucide-check h-3 w-3 mr-1"
+                          fill="none"
+                          height="24"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M20 6 9 17l-5-5"
+                          />
+                        </svg>
+                        Active
+                      </span>
+                    </label>
+                  </div>
+                  <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-destructive text-destructive-foreground hover:bg-destructive/90 h-10 w-10"
+                  >
+                    Delete
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
