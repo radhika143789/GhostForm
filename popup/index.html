@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Data Firewall</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="pdfw-popup">
+    <header class="pdfw-header">
+      <h1>Personal Data Firewall</h1>
+    </header>
+    
+    <main class="pdfw-content">
+      <div class="pdfw-status">
+        <div class="pdfw-status-icon active"></div>
+        <div class="pdfw-status-text">
+          <h3>Protection Active</h3>
+          <p>Monitoring for data exposure</p>
+        </div>
+      </div>
+      
+      <div class="pdfw-stats">
+        <div class="stat-item">
+          <span class="stat-value" id="totalDetections">0</span>
+          <span class="stat-label">Detections Today</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value" id="maskedItems">0</span>
+          <span class="stat-label">Items Masked</span>
+        </div>
+      </div>
+      
+      <div class="pdfw-actions">
+        <button id="viewDashboard" class="pdfw-button primary">View Dashboard</button>
+        <button id="manageProfile" class="pdfw-button secondary">Manage Profile</button>
+      </div>
+      
+      <div class="pdfw-recent">
+        <h3>Recent Activity</h3>
+        <div id="recentActivity" class="recent-list">
+          <p class="empty-state">No recent activity</p>
+        </div>
+      </div>
+    </main>
+    
+    <footer class="pdfw-footer">
+      <button id="openSettings" class="pdfw-link">Settings</button>
+      <span class="pdfw-version">v1.0.0</span>
+    </footer>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
