@@ -16,7 +16,7 @@ Ghost Form is a privacy-focused web application designed to help users protect t
 ## Tech Stack
 
 - **Frontend**: React, TypeScript, Vite
-- **UI**: [shadcn/ui](https://ui.shadcn.com/), Tailwind CSS, Lucide Icons
+- **UI**:  Tailwind CSS, Lucide Icons
 - **State Management**: React Context, React Query
 - **Authentication & Backend**: Supabase
 - **Other**: ESLint, PostCSS
